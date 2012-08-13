@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bottom_backgroud"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热门"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refresh" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_hot_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="80px"
+        android:horizontalSpacing="5px"
+        android:numColumns="3"
+        android:verticalSpacing="5px"
+        android:visibility="visible" >
+    </GridView>
+    <GridView
+        android:id="@+id/gv_stroe_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="80px"
+        android:horizontalSpacing="5px"
+        android:numColumns="3"
+        android:verticalSpacing="5px"
+        android:visibility="gone" >
+    </GridView>
+
+    <ListView
+        android:id="@+id/lv_classify_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="80px"
+        android:horizontalSpacing="10px"
+        android:verticalSpacing="5px"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="80px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seach_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:hint="input what you want to search"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="search" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:horizontalSpacing="5px"
+            android:numColumns="4"
+            android:verticalSpacing="5px" >
+        </GridView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="80px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_account"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_account"/>
+        
+        
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_backgroud" 
+        >
+
+        <ImageButton
+            android:id="@+id/ib_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/select_hot" />
+
+        <ImageButton
+            android:id="@+id/ib_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/select_classify" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/select_search" />
+
+        <ImageButton
+            android:id="@+id/ib_store"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/select_store" />
+
+        <ImageButton
+            android:id="@+id/ib_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/select_setting" />
+    </LinearLayout>
+
+</RelativeLayout>
